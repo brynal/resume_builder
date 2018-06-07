@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/resume/about','ResumeController@about')->name('about');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
