@@ -6,9 +6,15 @@ use Illuminate\Http\Request;
 
 class ResumeController extends Controller
 {
-    public function about()
+    public function showAbout()
     {
-        //return "working";
         return view('resume.about');
     }
+
+    public function saveAbout(Request $request)
+    {
+    	//dd($request);
+    	return $request->all();	
+    }
+
 }

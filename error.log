@@ -1,3 +1,0 @@
-[Mon Jun 04 12:17:02.649690 2018] [core:alert] [pid 11681] [client 192.168.0.136:34994] /home/qtech/projects/resume_builder/public/.htaccess: Options not allowed here
-[Mon Jun 04 12:17:44.798946 2018] [core:alert] [pid 11823] [client 192.168.0.136:34998] /home/qtech/projects/resume_builder/public/.htaccess: Options not allowed here
-[Mon Jun 04 12:17:46.060048 2018] [core:alert] [pid 11824] [client 192.168.0.136:35001] /home/qtech/projects/resume_builder/public/.htaccess: Options not allowed here

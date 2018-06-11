@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/resume/about','ResumeController@about')->name('about');
+Route::get('/resume/about','ResumeController@showAbout')->name('show_about');
+Route::post('/resume/about','ResumeController@saveAbout')->name('save_about');
 
 Auth::routes();
 
