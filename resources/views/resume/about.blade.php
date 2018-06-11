@@ -4,6 +4,11 @@
 	<div class='container'>
 <div class="panel panel-default">
 	<div class="panel-heading">About</div>
+	@if($errors->any())
+		@foreach($errors->all() AS $error)
+		<div class='alert alert-danger'> {{$error}}</div>
+		@endforeach
+	@endif
 	<div class="panel-body">
 		<form method = 'POST' class="form-horizontal" action="{{ route('save_about') }}" enctype='multipart/form-data'>
 		{{csrf_field()}}
