@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\About;
 class ResumeController extends Controller
 {
     public function showAbout()
@@ -25,7 +25,8 @@ class ResumeController extends Controller
     		'website' => 'nullable'
     		]);
 
-    	return 'all good';
+    	$about = new About;
+        $about->first_name = $request->get('first_name');
     }
 
 }
